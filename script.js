@@ -1,5 +1,5 @@
 function copyMoneroAddress() {
-  var value = "41hiNFCGava2NTK3uDQaNmFK7H7zgYJBdDXC9VSUBJ255XceKWhgVkT2w7xTc6caA9GH1fZobVv1k9n4EH8Gd5JtNWpznVr";
+  var value = "44D2frEXBV9TDUBss7PTYX9avDEfig2cEXidusq3okCLZfoHZ3eF3jVDqSDYWLPuWh3U1joRLBfXG3oF1hrFuZgkBM7zUN5";
   navigator.clipboard.writeText(value);
   alert("Copied!");
 } 
