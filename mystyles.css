@@ -92,17 +92,14 @@ table {
   border-collapse: collapse;
 }
 
-td {
-  padding: 1em;
-  border: 0;
-}
-
-td:first-child {
-  vertical-align: top;
+td, th {
+  padding: 0;
+  padding-left : 1em;
+  padding-right: 1em;
 }
 
 td:last-child {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 ul.social{
@@ -133,11 +130,10 @@ ul.social > li {
   td, th {
     display: block;
     padding: 0;
+    padding-top : 1em;
+    padding-bottom: 1em;
     width: 100%; /* Stretch table cells to fill available space */
-  }
-  
-  td {
-    border-bottom: none;
+    text-align: center;
   }
   
   colgroup, col {
