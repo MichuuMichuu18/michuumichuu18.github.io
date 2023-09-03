@@ -62,11 +62,12 @@
             color: inherit;
             border: 1px solid var(--text-light);
             padding: 5px 10px;
-            border-radius: 20px;
+            border-radius: 24px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             transition: background-color 0.5s, color 0.5s, border 0.5s;
             background-color: inherit;
             cursor: pointer;
+            font-size: 24px;
         }
 
         button:hover {
@@ -175,11 +176,14 @@
         }
 
         .section {
+            font-size: 30px;
             margin: 40px 0;
         }
         
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 700px) {
             header, .content {
+                padding-top: 40px;
+                padding-bottom: 10px;
                 padding-left: 20px; /* Add left gap inside the header */
                 padding-right: 20px; /* Add right gap inside the header */
             }
@@ -204,7 +208,8 @@
 
             button {
                 padding: 5px 8px;
-                font-size: 16px;
+                font-size: 20px;
+                border-radius: 20px;
             }
 
             .content-text, .content-text-project {
@@ -240,6 +245,10 @@
             .project-text p {
                 font-size: 16px;
             }
+            
+            .section {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
@@ -265,6 +274,7 @@
                 <img src="https://github.com/MichuuMichuu18/2048/raw/main/screenshot.png">
                 <div class="project-text">
                     <p class="content-text-project">2048 is a single-player puzzle game where you merge tiles to reach 2048. It continues past this point and ends when no moves are possible. Use W, A, S, and D keys to move tiles.</p>
+                    <br>
                     <p class="content-text-project">I wrote this game in C language using freeglut library.</p>
                 </div>
             </div>
