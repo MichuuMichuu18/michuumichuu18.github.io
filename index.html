@@ -298,19 +298,15 @@
         // Detect the user's preferred color scheme
         const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
         
-        // Check if the user's preferred color scheme is dark and set the class accordingly
-        if (prefersDarkMode.matches) {
-            body.classList.add('dark');
-            2048.ss.src = "/project-2048-dark.png"
-        }
-
-        modeToggle.addEventListener('click', () => {
-            if (body.classList.contains('dark')) {
-                body.classList.remove('dark');
-            } else {
+        prefersDarkMode.addEventListener("change", (e) => {
+            if (e.matches) {
                 body.classList.add('dark');
+                2048-ss.src = "/project-2048-dark.png"
+            } else {
+                body.classList.remove('dark');
+                2048-ss.src = "/project-2048-light.png"
             }
-        });
+        }
     </script>
 </body>
 </html>
