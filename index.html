@@ -293,7 +293,7 @@
     </div>
     <script>
         const body = document.body;
-        const 2048-ss = document.getElementById("project-2048-screenshot");
+        const project2048Screenshot = document.getElementById("project-2048-screenshot");
 
         // Detect the user's preferred color scheme
         const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
@@ -301,10 +301,10 @@
         prefersDarkMode.addEventListener("change", (e) => {
             if (e.matches) {
                 body.classList.add('dark');
-                2048-ss.src = "/project-2048-dark.png"
+                project2048Screenshot.src = "/project-2048-dark.png"
             } else {
                 body.classList.remove('dark');
-                2048-ss.src = "/project-2048-light.png"
+                project2048Screenshot.src = "/project-2048-light.png"
             }
         }
     </script>
