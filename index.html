@@ -294,19 +294,14 @@
     <script>
         const body = document.body;
         const project2048Screenshot = document.getElementById("project-2048-screenshot");
-
-        // Detect the user's preferred color scheme
-        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
         
-        prefersDarkMode.addEventListener("change", (e) => {
-            if (e.matches) {
-                body.classList.add('dark');
-                project2048Screenshot.src = "/project-2048-dark.png"
-            } else {
-                body.classList.remove('dark');
-                project2048Screenshot.src = "/project-2048-light.png"
-            }
-        });
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            body.classList.add('dark');
+            project2048Screenshot.src = "/project-2048-dark.png"
+        } else {
+            body.classList.remove('dark');
+            project2048Screenshot.src = "/project-2048-light.png"
+        }
     </script>
 </body>
 </html>
