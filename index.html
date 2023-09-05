@@ -92,39 +92,6 @@
             color: var(--background-dark);
         }
 
-        body.dark {
-            background-color: var(--background-dark);
-            color: var(--text-dark);
-        }
-
-        body.dark header {
-            background-color: var(--text-dark);
-            color: var(--background-dark);
-        }
-
-        body.dark img.profile-pic {
-            background-color: var(--text-light);
-            box-shadow: 0 0 0 5px var(--text-light);
-        }
-
-        body.dark button {
-            border: 1px solid var(--text-dark);
-        }
-
-        body.dark button:hover {
-            background-color: var(--text-dark);
-            color: var(--background-dark);
-        }
-
-        body.dark header button {
-            border: 1px solid var(--text-light);
-        }
-
-        body.dark header button:hover {
-            background-color: var(--text-light);
-            color: var(--background-light);
-        }
-
         .content-text {
             font-size: 20px;
             line-height: 2;
@@ -140,8 +107,8 @@
         }
 
         .project {
-            background-color: var(--background-light);
-            color: var(--text-light);
+            background-color: var(--background-dark);
+            color: var(--text-dark);
             padding: 30px;
             max-width: 600px;
             margin: 0px auto;
@@ -250,6 +217,44 @@
                 font-size: 24px;
             }
         }
+        
+        body.dark {
+            background-color: var(--background-dark);
+            color: var(--text-dark);
+        }
+
+        body.dark header {
+            background-color: var(--text-dark);
+            color: var(--background-dark);
+        }
+
+        body.dark img.profile-pic {
+            background-color: var(--text-light);
+            box-shadow: 0 0 0 5px var(--text-light);
+        }
+
+        body.dark button {
+            border: 1px solid var(--text-dark);
+        }
+
+        body.dark button:hover {
+            background-color: var(--text-dark);
+            color: var(--background-dark);
+        }
+
+        body.dark header button {
+            border: 1px solid var(--text-light);
+        }
+
+        body.dark header button:hover {
+            background-color: var(--text-light);
+            color: var(--background-light);
+        }
+        
+        body.dark .project {
+            background-color: var(--background-light);
+            color: var(--text-light);
+        }
     </style>
 </head>
 <body>
@@ -272,7 +277,7 @@
         <div class="project">
             <h2>2048</h2>
             <div class="project-content">
-                <img src="https://github.com/MichuuMichuu18/2048/raw/main/screenshot.png">
+                <img id="project-2048-screenshot" src="/project-2048-light.png">
                 <div class="project-text">
                     <p class="content-text-project">2048 is a single-player puzzle game where you merge tiles to reach 2048. It continues past this point and ends when no moves are possible. Use W, A, S, and D keys to move tiles.</p>
                     <br>
@@ -288,6 +293,7 @@
     </div>
     <script>
         const body = document.body;
+        const 2048-ss = document.getElementById("project-2048-screenshot");
 
         // Detect the user's preferred color scheme
         const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
@@ -295,6 +301,7 @@
         // Check if the user's preferred color scheme is dark and set the class accordingly
         if (prefersDarkMode.matches) {
             body.classList.add('dark');
+            2048.ss.src = "/project-2048-dark.png"
         }
 
         modeToggle.addEventListener('click', () => {
