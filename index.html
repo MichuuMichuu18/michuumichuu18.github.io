@@ -261,7 +261,7 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="/profile-pic.png" class="profile-pic">
+            <img src="pictures/profile-pic.png" class="profile-pic">
             <h1 class="header-text">Hello, I'm MichuuMichuu</h1>
         </div>
     </header>
@@ -278,7 +278,7 @@
         <div class="project">
             <h2>2048</h2>
             <div class="project-content">
-                <img id="project-2048-screenshot" src="project-2048-light.png">
+                <img id="project-2048-screenshot" src="pictures/project-2048-light.png">
                 <div class="project-text">
                     <p class="content-text-project">2048 is a single-player puzzle game where you merge tiles to reach 2048. It continues past this point and ends when no moves are possible. Use W, A, S, and D keys to move tiles.</p>
                     <br>
@@ -298,10 +298,10 @@
         
         if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
             body.classList.add('dark');
-            project2048Screenshot.src = "project-2048-dark.png"
+            project2048Screenshot.src = "pictures/project-2048-dark.png"
         } else {
             body.classList.remove('dark');
-            project2048Screenshot.src = "project-2048-light.png"
+            project2048Screenshot.src = "pictures/project-2048-light.png"
         }
     </script>
 </body>
