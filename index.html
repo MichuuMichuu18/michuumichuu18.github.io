@@ -56,7 +56,6 @@
 
         button {
             text-decoration: none;
-            margin: 0 10px;
             color: inherit;
             border: 1px solid var(--text-light);
             padding: 5px 10px;
@@ -70,6 +69,10 @@
         button:hover {
             background-color: var(--text-light);
             color: var(--background-light);
+        }
+        
+        .social-buttons-container button {
+            margin: 0 10px;
         }
 
         header button {
@@ -211,6 +214,16 @@
             
             .section {
                 font-size: 24px;
+            }
+            
+            .social-buttons-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .social-buttons-container button {
+                margin: 10px 0; /* Add space between buttons */
             }
         }
         
