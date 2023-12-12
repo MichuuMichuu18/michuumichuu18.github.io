@@ -22,18 +22,16 @@
             color: var(--text-light);
         }
 
-        header {
-            background-color: var(--text-light);
-            color: var(--background-light);
-            padding: 30px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-        }
-
         .header-content {
             display: flex;
             align-items: center;
             max-width: 600px;
-            margin: 0px auto;
+            background-color: var(--background-dark);
+            color: var(--text-dark);
+            padding: 30px;
+            max-width: 600px;
+            margin: 40px auto;
+            border-radius: 40px;
         }
 
         h1.header-text {
@@ -147,9 +145,7 @@
         }
         
         @media screen and (max-width: 700px) {
-            header, .content {
-                padding-top: 40px;
-                padding-bottom: 10px;
+            .content {
                 padding-left: 20px; /* Add left gap inside the header */
                 padding-right: 20px; /* Add right gap inside the header */
             }
@@ -157,6 +153,9 @@
             .header-content {
                 flex-direction: column; /* Stack header items vertically on mobile */
                 align-items: center;
+                padding: 20px;
+                margin: 20px;
+                padding-top: 50px;
             }
 
             h1.header-text {
@@ -232,7 +231,7 @@
             color: var(--text-dark);
         }
 
-        body.dark header {
+        body.dark .header-content {
             background-color: var(--text-dark);
             color: var(--background-dark);
         }
@@ -268,6 +267,7 @@
         spacer {
             margin: 40px;
         }
+    
     </style>
 </head>
 <body>
@@ -278,9 +278,7 @@
         </div>
     </header>
     <div class="content">
-        <p class="content-text">
-            I'm a self-taught programmer with a passion for free and open-source software. My main platform of choice is Fedora Linux, where I craft diverse projects and contribute to the open-source community. In my free time, I relish exploring new programming languages and technologies. If you share these interests or have exciting project ideas, don't hesitate to connect with me!
-        </p>
+        <p class="content-text">I'm a self-taught programmer with a passion for free and open-source software. My main platform of choice is Fedora Linux, where I craft diverse projects and contribute to the open-source community. In my free time, I'm also an amateur photographer, capturing moments through my lens. I relish exploring new programming languages and technologies. If you share these interests or have exciting project ideas, don't hesitate to connect with me!</p>
         
         <h1 class="section">My projects</h1>
         <p class="content-text">
