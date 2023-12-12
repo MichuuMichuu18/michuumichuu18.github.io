@@ -50,11 +50,11 @@
             box-shadow: 0 0 0 5px var(--text-dark);
         }
 
-        .social-buttons-container {
+        .social-links-container {
             margin: 40px;
         }
 
-        button {
+        a {
             text-decoration: none;
             color: inherit;
             border: 1px solid var(--text-light);
@@ -66,16 +66,16 @@
             font-size: 24px;
         }
 
-        button:hover {
+        a:hover {
             background-color: var(--text-light);
             color: var(--background-light);
         }
         
-        .social-buttons-container button {
+        .social-links-container a {
             margin: 0 10px;
         }
 
-        header button {
+        header a {
             background-color: transparent;
             color: inherit;
             border: 1px solid var(--text-dark);
@@ -86,7 +86,7 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
-        header button:hover {
+        header a:hover {
             background-color: var(--text-dark);
             color: var(--background-dark);
         }
@@ -168,11 +168,11 @@
                 max-width: 5em;
             }
 
-            .social-buttons-container {
+            .social-links-container {
                 margin: 20px 0; /* Add vertical margin */
             }
 
-            button {
+            a {
                 padding: 5px 8px;
                 font-size: 20px;
                 border-radius: 20px;
@@ -216,13 +216,13 @@
                 font-size: 24px;
             }
             
-            .social-buttons-container {
+            .social-links-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
 
-            .social-buttons-container button {
+            .social-links-container a {
                 margin: 10px 0; /* Add space between buttons */
             }
         }
@@ -242,20 +242,20 @@
             box-shadow: 0 0 0 5px var(--text-light);
         }
 
-        body.dark button {
+        body.dark a {
             border: 1px solid var(--text-dark);
         }
 
-        body.dark button:hover {
+        body.dark a:hover {
             background-color: var(--text-dark);
             color: var(--background-dark);
         }
 
-        body.dark header button {
+        body.dark header a {
             border: 1px solid var(--text-light);
         }
 
-        body.dark header button:hover {
+        body.dark header a:hover {
             background-color: var(--text-light);
             color: var(--background-light);
         }
@@ -311,10 +311,10 @@
             </div>
         </div>
 
-        <div class="social-buttons-container">
-            <button onclick="location.href='https://www.youtube.com/channel/UCjuFTFlZWnz9s-3NG-kkjUQ'">YouTube</button>
-            <button onclick="location.href='https://instagram.com/_michalmajewski'">Instagram</button>
-              <button onclick="location.href='https://github.com/MichuuMichuu18'">GitHub</button>
+        <div class="social-links-container">
+            <a onclick="location.href='https://www.youtube.com/channel/UCjuFTFlZWnz9s-3NG-kkjUQ'">YouTube</a>
+            <a onclick="location.href='https://instagram.com/_michalmajewski'">Instagram</a>
+            <a onclick="location.href='https://github.com/MichuuMichuu18'">GitHub</a>
         </div>
     </div>
     <script>
