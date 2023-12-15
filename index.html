@@ -22,7 +22,7 @@
             color: var(--text-light);
         }
 
-        .header-content {
+        .header {
             display: flex;
             align-items: center;
             max-width: 600px;
@@ -71,22 +71,6 @@
         
         .social-links-container a {
             margin: 0 10px;
-        }
-
-        header a {
-            background-color: transparent;
-            color: inherit;
-            border: 1px solid var(--text-dark);
-            padding: 5px 10px;
-            border-radius: 20px;
-            margin-top: 20px;
-            cursor: pointer;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        header a:hover {
-            background-color: var(--text-dark);
-            color: var(--background-dark);
         }
 
         .content-text {
@@ -150,7 +134,7 @@
                 padding-right: 30px; /* Add right gap inside the header */
             }
             
-            .header-content {
+            .header {
                 flex-direction: column; /* Stack header items vertically on mobile */
                 align-items: center;
                 padding: 20px;
@@ -232,7 +216,7 @@
             color: var(--text-dark);
         }
 
-        body.dark .header-content {
+        body.dark .header {
             background-color: var(--text-dark);
             color: var(--background-dark);
         }
@@ -250,15 +234,6 @@
             background-color: var(--text-dark);
             color: var(--background-dark);
         }
-
-        body.dark header a {
-            border: 1px solid var(--text-light);
-        }
-
-        body.dark header a:hover {
-            background-color: var(--text-light);
-            color: var(--background-light);
-        }
         
         body.dark .project {
             background-color: var(--background-light);
@@ -267,12 +242,10 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="pictures/profile-pic.png" class="profile-pic">
-            <h1 class="header-text">Hello, I'm MichuuMichuu</h1>
-        </div>
-    </header>
+    <div class="header">
+        <img src="pictures/profile-pic.png" class="profile-pic">
+        <h1 class="header-text">Hello, I'm MichuuMichuu</h1>
+    </div>
     <div class="content">
         <p class="content-text">I'm a self-taught programmer with a passion for free and open-source software. My main platform of choice is Fedora Linux, where I craft diverse projects and contribute to the open-source community. In my free time, I'm also an amateur photographer, capturing moments through my lens. I relish exploring new programming languages and technologies.</p>
         
