@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>**** ** ***</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        * {
-          margin: 0;
-          padding: 0;
-          font-size: 32px;
-        }
-
-        body {
-          background: black;
-          color: white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          font-family: monospace;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Under Construction</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  display:flex; justify-content:center; align-items:center;
+  height:100vh; background:black; color:white; font-family:monospace;
+}
+p {
+  font-size:2.5rem; text-align:center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  animation: flicker 5s steps(18) forwards;
+}
+@keyframes flicker {
+  0%   { opacity:0; text-shadow:none; }
+  1%   { opacity:1; text-shadow:0 0 3px #fff,0 0 5px #fff,0 0 8px #fff,0 0 12px #fff; }
+  2%   { opacity:.8; text-shadow:0 0 2px #fff,0 0 4px #fff,0 0 6px #fff,0 0 15px #fff; }
+  3%   { opacity:1; text-shadow:0 0 6px #fff,0 0 10px #fff,0 0 15px #fff,0 0 25px #fff; }
+  4%   { opacity:.6; text-shadow:0 0 1px #fff,0 0 3px #fff,0 0 5px #fff,0 0 30px #fff; }
+  5%   { opacity:1; text-shadow:0 0 8px #fff,0 0 15px #fff,0 0 20px #fff,0 0 40px #fff; }
+  6%   { opacity:.7; text-shadow:0 0 2px #fff,0 0 5px #fff,0 0 8px #fff,0 0 50px #fff; }
+  7%   { opacity:1; text-shadow:0 0 10px #fff,0 0 20px #fff,0 0 30px #fff,0 0 65px #fff; }
+  8%   { opacity:.5; text-shadow:0 0 1px #fff,0 0 3px #fff,0 0 5px #fff,0 0 70px #fff; }
+  10%  { text-shadow:0 0 15px #fff,0 0 30px #fff,0 0 40px #fff,0 0 85px #fff; opacity: 1; }
+  15%  { text-shadow:0 0 18px #fff,0 0 36px #fff,0 0 48px #fff,0 0 105px #fff; }
+  25%  { text-shadow:0 0 21px #fff,0 0 42px #fff,0 0 55px #fff,0 0 120px #fff; }
+  35%  { text-shadow:0 0 24px #fff,0 0 48px #fff,0 0 60px #fff,0 0 130px #fff; }
+  50%  { text-shadow:0 0 27px #fff,0 0 54px #fff,0 0 65px #fff,0 0 140px #fff; }
+  60%  { text-shadow:0 0 30px #fff,0 0 60px #fff,0 0 70px #fff,0 0 145px #fff; }
+  70%  { text-shadow:0 0 33px #fff,0 0 66px #fff,0 0 75px #fff,0 0 150px #fff; }
+  80%  { text-shadow:0 0 36px #fff,0 0 72px #fff,0 0 80px #fff,0 0 155px #fff; }
+  90%  { text-shadow:0 0 39px #fff,0 0 78px #fff,0 0 85px #fff,0 0 160px #fff; }
+  100% { text-shadow:0 0 42px #fff,0 0 84px #fff,0 0 90px #fff,0 0 165px #fff; }
+}
+</style>
 </head>
 <body>
-    <p>under construction</p>
+<p>under construction</p>
 </body>
 </html>
-
